@@ -48,6 +48,19 @@ vbf = lambda v=False : _analysis(
         puppi_jets = False
     )
 
+monojet = lambda v=False : _analysis(
+        name = 'monojet',
+        verbose = v,
+        monojet = True,
+        fatjet = True,
+        btagSFs = True,
+	btagWeights = True,
+        useCMVA = True,
+        puppi_jets = True,
+	hfCounting = True,
+	jetFlavorJets = True
+    )
+
 monoh = lambda v=False : _analysis(
         name = 'monoh',
         verbose = v,

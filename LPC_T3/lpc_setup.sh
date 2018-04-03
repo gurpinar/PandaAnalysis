@@ -2,14 +2,14 @@
 export PATH=${PATH}:${CMSSW_BASE}/src/PandaCore/bin/
 
 #submission number
-export SUBMIT_NAME="v_8026_monoj_v2"
+export SUBMIT_NAME="v_930_monojet_v2"
 #scratch space
 export scratch_area="/uscms_data/d3"
 export PANDA="${CMSSW_BASE}/src/PandaAnalysis"
 #cfg file
-export PANDA_CFG="http://t3serv001.mit.edu/~mcremone/eoscatalog/20170905.cfg"
+export PANDA_CFG="http://t3serv001.mit.edu/~mcremone/histcatalog/test.cfg"
 #skim
-export SUBMIT_TMPL="skim_monoj_tmpl.py"
+export SUBMIT_TMPL="skim_monojet_tmpl.py"
 #panda's 
 export PANDA_FLATDIR="${scratch_area}/${USER}/panda/"${SUBMIT_NAME}"/flat/"
 export SUBMIT_OUTDIR="/store/user/${USER}/panda/"${SUBMIT_NAME}"/batch/"
