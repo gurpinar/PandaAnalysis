@@ -269,6 +269,7 @@ int PandaAnalyzer::Init(TTree *t, TH1D *hweights, TTree *weightNames)
     softTrackJetDefinition = new fastjet::JetDefinition(fastjet::antikt_algorithm,0.4);
 
   // Custom jet pt threshold
+  if (analysis->monojet) jetPtThreshold=20;
   if (analysis->hbb) jetPtThreshold=20;
   if (analysis->vbf || analysis->hbb || analysis->complicatedLeptons) 
     bJetPtThreshold=20;
