@@ -67,6 +67,8 @@ void PandaAnalyzer::JetBasics()
       continue;
     if(!analysis->hbb && IsMatched(&matchPhos,0.16,jet.eta(),jet.phi()))
       continue;
+    if(analysis->monojet && !jet.loose)
+      continue;
     if ((analysis->vbf || analysis->hbb) && !jet.loose)
       continue;
 

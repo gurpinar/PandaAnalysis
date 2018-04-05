@@ -72,6 +72,7 @@ void PandaAnalyzer::SetOutputFile(TString fOutName)
 
   gt->monohiggs      = (analysis->boosted || analysis->hbb);
   gt->vbf            = analysis->vbf;
+  gt->monojet        = analysis->monojet;
   gt->fatjet         = analysis->fatjet;
   gt->leptonic       = analysis->complicatedLeptons;
   gt->photonic       = analysis->complicatedPhotons;

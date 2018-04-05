@@ -49,11 +49,8 @@ monojet = lambda v=False : _analysis(
         name = 'monojet',
         verbose = v,
 	monojet = True,
-        fatjet = True,
-        btagSFs = True,
         btagWeights = True,
         useCMVA = True,
-        puppi_jets = True,
         hfCounting = True,
         jetFlavorJets = True
 
