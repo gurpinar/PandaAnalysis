@@ -287,6 +287,7 @@ private:
     void JetHbbBasics(panda::Jet&);
     void JetBosonReco();
     void JetHbbSoftActivity();
+    void JetHbbReco();
     void JetVBFBasics(panda::Jet&);
     void JetVBFSystem();
     void JetVaryJES(panda::Jet&);
